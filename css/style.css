@@ -4,20 +4,6 @@
   margin: 0;
   padding: 0; }
 
-
-  .grillaIndex {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
-    grid-template-areas:
-        "navIndex navIndex navIndex navIndex"
-        "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex"
-        "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex"
-        "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex"
-        "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex"
-        "footer footer footer footer";
-}
-
 .header {
   grid-area: navIndex;
   display: flex;
