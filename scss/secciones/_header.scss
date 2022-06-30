@@ -1,0 +1,30 @@
+.header {
+    grid-area: navIndex;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to left, #434343 0%, black 100%);
+    &__img{
+            margin-left: 50px;
+        }
+    &__ul{
+        display: flex;
+        margin-right: 50px;
+        li{
+            list-style: none;
+            padding: 15px;
+            &:hover{
+                background-color: orangered;
+                border-radius: 15px;
+            }
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+                font-family: $typoParagraph;
+                font-size: 18px;
+            }
+        }
+    }
+    }

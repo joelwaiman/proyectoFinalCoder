@@ -1,0 +1,18 @@
+.footer{
+    grid-area: footer;
+    background-image: linear-gradient(to left, #434343 0%, black 100%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    h4{
+        padding: 10px;
+        text-align: center;
+        font-family: $typoParagraph;
+    }
+    i{
+        padding-right: 20px;
+        font-size: 25px;
+    }
+}

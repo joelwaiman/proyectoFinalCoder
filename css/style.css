@@ -15,3 +15,66 @@
   align-items: center;
   padding: 50px;
   text-align: center; }
+
+.header {
+  grid-area: navIndex;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to left, #434343 0%, black 100%); }
+  .header__img {
+    margin-left: 50px; }
+  .header__ul {
+    display: flex;
+    margin-right: 50px; }
+    .header__ul li {
+      list-style: none;
+      padding: 15px; }
+      .header__ul li:hover {
+        background-color: orangered;
+        border-radius: 15px; }
+      .header__ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px; }
+
+.footer {
+  grid-area: footer;
+  background-image: linear-gradient(to left, #434343 0%, black 100%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; }
+  .footer h4 {
+    padding: 10px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif; }
+  .footer i {
+    padding-right: 20px;
+    font-size: 25px; }
+
+#index .seccionUnoIndex {
+  grid-area: seccionUnoIndex;
+  display: flex; }
+  #index .seccionUnoIndex img {
+    max-width: 100%;
+    display: block; }
+  #index .seccionUnoIndex div {
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 50px; }
+    #index .seccionUnoIndex div h1 {
+      font-family: "Roboto", sans-serif;
+      color: white;
+      font-size: 100px;
+      text-shadow: 1px 1px #989898; }
+    #index .seccionUnoIndex div p {
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      font-size: 25px;
+      max-width: 700px;
+      text-shadow: 1px 1px #989898; }
