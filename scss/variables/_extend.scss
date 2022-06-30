@@ -1,0 +1,13 @@
+%styleCards{
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 1px 1px rgba(221, 221, 221, 0);
+}
+
+%contenedoresCards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}

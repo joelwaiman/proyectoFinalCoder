@@ -1,0 +1,13 @@
+#sneakers{
+    .seccionUnoSneakers{
+        @extend %contenedoresCards;
+    }
+    .seccionDosSneakers{
+        @extend %contenedoresCards;
+    }
+    img{
+        @extend %styleCards;
+    }
+ }
+
+    

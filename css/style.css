@@ -3,3 +3,15 @@
 * {
   margin: 0;
   padding: 0; }
+
+#sneakers img {
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 1px 1px rgba(221, 221, 221, 0); }
+
+#sneakers .seccionUnoSneakers, #sneakers .seccionDosSneakers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  text-align: center; }
