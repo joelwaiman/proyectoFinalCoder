@@ -4,10 +4,10 @@
   margin: 0;
   padding: 0; }
 
-#sneakers img {
+#sneakers .seccionUnoSneakers img, #sneakers .seccionDosSneakers img {
   max-width: 500px;
   border-radius: 20px;
-  box-shadow: 1px 1px rgba(221, 221, 221, 0); }
+  box-shadow: 5px 5px 20px gainsboro; }
 
 #sneakers .seccionUnoSneakers, #sneakers .seccionDosSneakers {
   display: flex;
