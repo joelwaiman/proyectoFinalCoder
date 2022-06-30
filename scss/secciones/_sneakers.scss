@@ -1,6 +1,13 @@
 #sneakers{
     .seccionUnoSneakers, .seccionDosSneakers{
         @extend %contenedoresCards;
+        h2{
+            font-family: $typoTitle;
+            padding-top: 25px;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
         img{
             @extend %styleCards;
         }

@@ -79,13 +79,31 @@
       max-width: 700px;
       text-shadow: 1px 1px #989898; }
 
+#sneakers .seccionUnoSneakers h2, #sneakers .seccionDosSneakers h2 {
+  font-family: "Roboto", sans-serif;
+  padding-top: 25px; }
+  #sneakers .seccionUnoSneakers h2:hover, #sneakers .seccionDosSneakers h2:hover {
+    transform: scale(1.1); }
+
 .grillaTiendas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0,5fr 1.5fr 1.5fr 0.5fr 0.5fr;
+  grid-template-rows: 0, 5fr 1.5fr 1.5fr 0.5fr 0.5fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "header header header header" "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas" "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas" "asideTiendas asideTiendas asideTiendas asideTiendas" "footer footer footer footer"; }
+  .grillaTiendas section div {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: "Open Sans", sans-serif; }
+    .grillaTiendas section div:hover {
+      transform: scale(1.1); }
+    .grillaTiendas section div h1 {
+      padding-bottom: 25px; }
+  .grillaTiendas section img {
+    max-width: 100%;
+    display: block; }
 
 .seccionUnoTiendas {
   grid-area: seccionUnoTiendas;
@@ -93,17 +111,6 @@
   justify-content: center;
   align-items: center;
   color: white; }
-  .seccionUnoTiendas div {
-    position: absolute;
-    color: white;
-    text-align: center; }
-    .seccionUnoTiendas div:hover {
-      transform: scale(1.1); }
-    .seccionUnoTiendas div h1 {
-      padding-bottom: 25px; }
-  .seccionUnoTiendas img {
-    width: 100%;
-    display: block; }
 
 .seccionDosTiendas {
   grid-area: seccionDosTiendas;
@@ -111,17 +118,6 @@
   justify-content: center;
   align-items: center;
   color: white; }
-  .seccionDosTiendas div {
-    position: absolute;
-    color: white;
-    text-align: center; }
-    .seccionDosTiendas div:hover {
-      transform: scale(1.1); }
-    .seccionDosTiendas div h1 {
-      padding-bottom: 25px; }
-  .seccionDosTiendas img {
-    max-width: 100%;
-    display: block; }
 
 .asideTiendas {
   grid-area: asideTiendas;
@@ -131,6 +127,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  font-family: "Roboto", sans-serif; }
   .asideTiendas h2 {
     padding: 50px; }

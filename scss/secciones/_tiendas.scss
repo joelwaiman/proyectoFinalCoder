@@ -1,7 +1,7 @@
 .grillaTiendas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0,5fr 1.5fr 1.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0, 5fr 1.5fr 1.5fr 0.5fr 0.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -10,6 +10,29 @@
         "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas"
         "asideTiendas asideTiendas asideTiendas asideTiendas"
         "footer footer footer footer";
+
+    section {
+        div {
+            position: absolute;
+            color: white;
+            text-align: center;
+            font-family: $typoParagraph;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            h1 {
+                padding-bottom: 25px;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+    }
+
 }
 
 .seccionUnoTiendas {
@@ -18,22 +41,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    div{
-        position: absolute;
-        color: white;
-        text-align: center;
-        &:hover{
-            transform: scale(1.1);
-        }
-        h1{
-            padding-bottom: 25px;
-        }
-    }
     
-    img{
-        width: 100%;
-        display: block;
-    }
 }
 
 .seccionDosTiendas {
@@ -42,22 +50,6 @@
     justify-content: center;
     align-items: center;
     color: white;
-    div{
-        position: absolute;
-        color: white;
-        text-align: center;
-        &:hover{
-            transform: scale(1.1);
-        }
-        h1{
-            padding-bottom: 25px;
-        }
-    }
-
-    img{
-        max-width: 100%;
-        display: block;
-    }
 }
 
 .asideTiendas {
@@ -69,7 +61,9 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
-    h2{
+    font-family: $typoTitle;
+
+    h2 {
         padding: 50px;
     }
 }
