@@ -1,4 +1,17 @@
 #index{
+    .grillaIndex {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1.5fr 1.5fr 1.5fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header header header header"
+          "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex"
+          "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex"
+          "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex"
+          "footer footer footer footer";
+      }
+      
     .seccionUnoIndex {
         grid-area: seccionUnoIndex;
         display: flex;
