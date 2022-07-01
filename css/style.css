@@ -4,12 +4,12 @@
   margin: 0;
   padding: 0; }
 
-#sneakers .seccionUnoSneakers img, #sneakers .seccionDosSneakers img {
+#sneakers .sneakersGrilla .seccionUnoSneakers img, #sneakers .sneakersGrilla .seccionDosSneakers img {
   max-width: 500px;
   border-radius: 20px;
   box-shadow: 5px 5px 20px gainsboro; }
 
-#sneakers .seccionUnoSneakers, #sneakers .seccionDosSneakers {
+#sneakers .sneakersGrilla .seccionUnoSneakers, #sneakers .sneakersGrilla .seccionDosSneakers {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -79,11 +79,20 @@
       max-width: 700px;
       text-shadow: 1px 1px #989898; }
 
-#sneakers .seccionUnoSneakers h2, #sneakers .seccionDosSneakers h2 {
-  font-family: "Roboto", sans-serif;
-  padding-top: 25px; }
-  #sneakers .seccionUnoSneakers h2:hover, #sneakers .seccionDosSneakers h2:hover {
-    transform: scale(1.1); }
+#sneakers .sneakersGrilla {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-areas: "navSneakers navSneakers navSneakers navSneakers"
+ "seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers"
+ "seccionDosSneakers seccionDosSneakers seccionDosSneakers seccionDosSneakers"
+ "footerSneakers footerSneakers footerSneakers footerSneakers"; }
+  #sneakers .sneakersGrilla .seccionUnoSneakers h2, #sneakers .sneakersGrilla .seccionDosSneakers h2 {
+    font-family: "Roboto", sans-serif;
+    padding-top: 25px; }
+    #sneakers .sneakersGrilla .seccionUnoSneakers h2:hover, #sneakers .sneakersGrilla .seccionDosSneakers h2:hover {
+      transform: scale(1.1); }
 
 .grillaTiendas {
   display: grid;
@@ -91,7 +100,11 @@
   grid-template-rows: 0, 5fr 1.5fr 1.5fr 0.5fr 0.5fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "header header header header" "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas" "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas" "asideTiendas asideTiendas asideTiendas asideTiendas" "footer footer footer footer"; }
+  grid-template-areas: "header header header header"
+ "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas"
+ "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas"
+ "asideTiendas asideTiendas asideTiendas asideTiendas"
+ "footer footer footer footer"; }
   .grillaTiendas section div {
     position: absolute;
     color: white;
@@ -130,4 +143,67 @@
   padding-bottom: 50px;
   font-family: "Roboto", sans-serif; }
   .asideTiendas h2 {
+    padding: 50px; }
+
+#nosotros .grillaNosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0,5fr 0.5fr 1.5fr 1.5fr 1.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header header header header"
+ "encabezadoTitulo encabezadoTitulo encabezadoTitulo encabezadoTitulo"
+ "seccionUnoNosotros seccionUnoNosotros seccionUnoNosotros seccionUnoNosotros"
+ "seccionDosNosotros seccionDosNosotros seccionDosNosotros seccionDosNosotros"
+ "seccionTresNosotros seccionTresNosotros seccionTresNosotros seccionTresNosotros"
+ "footer footer footer footer"; }
+  #nosotros .grillaNosotros .encabezadoTitulo {
+    grid-area: encabezadoTitulo;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: black; }
+  #nosotros .grillaNosotros .seccionUnoNosotros {
+    grid-area: seccionUnoNosotros;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 100px; }
+    #nosotros .grillaNosotros .seccionUnoNosotros img {
+      max-width: 750px; }
+    #nosotros .grillaNosotros .seccionUnoNosotros p {
+      width: 455px;
+      font-size: 27px;
+      font-family: "Open Sans", sans-serif;
+      text-align: center; }
+  #nosotros .grillaNosotros .seccionDosNosotros {
+    grid-area: seccionDosNosotros;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding: 50,0,50,0;
+    background-color: black; }
+    #nosotros .grillaNosotros .seccionDosNosotros img {
+      max-width: 750px; }
+    #nosotros .grillaNosotros .seccionDosNosotros p {
+      width: 455px;
+      font-size: 27px;
+      font-family: "Open Sans", sans-serif;
+      color: white; }
+    #nosotros .grillaNosotros .seccionDosNosotros div {
+      text-align: center; }
+      #nosotros .grillaNosotros .seccionDosNosotros div button {
+        border-radius: 10px;
+        background-color: orangered;
+        color: white;
+        font-size: 15px;
+        margin-top: 20px;
+        padding: 10px 20px; }
+        #nosotros .grillaNosotros .seccionDosNosotros div button:hover {
+          transform: scale(1.1); }
+  #nosotros .grillaNosotros .seccionTresNosotros {
+    grid-area: seccionTresNosotros;
+    margin: auto;
     padding: 50px; }

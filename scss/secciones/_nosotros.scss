@@ -1,0 +1,78 @@
+#nosotros {
+    .grillaNosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0,5fr 0.5fr 1.5fr 1.5fr 1.5fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header header header header"
+            "encabezadoTitulo encabezadoTitulo encabezadoTitulo encabezadoTitulo"
+            "seccionUnoNosotros seccionUnoNosotros seccionUnoNosotros seccionUnoNosotros"
+            "seccionDosNosotros seccionDosNosotros seccionDosNosotros seccionDosNosotros"
+            "seccionTresNosotros seccionTresNosotros seccionTresNosotros seccionTresNosotros"
+            "footer footer footer footer";
+            .encabezadoTitulo {
+                grid-area: encabezadoTitulo;
+                text-align: center;
+                padding: 50px;
+                font-size: 30px;
+                font-family: $typoTitle;
+                color: black;
+            }
+            .seccionUnoNosotros {
+                grid-area: seccionUnoNosotros;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding-top: 100px;
+                img{
+                    max-width: 750px;
+                }
+                p{
+                    width: 455px;
+                    font-size: 27px;
+                    font-family: $typoParagraph;
+                    text-align: center;
+                }
+            }
+        
+            .seccionDosNosotros {
+                grid-area: seccionDosNosotros;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-top: 50px;
+                padding: 50,0,50,0;
+                background-color: black;
+                img{
+                    max-width: 750px;
+                }
+                p{
+                    width: 455px;
+                    font-size: 27px;
+                    font-family: $typoParagraph;
+                    color: white;    
+                }
+                div{
+                    text-align: center;
+                    button{
+                        border-radius: 10px;
+                        background-color: orangered;
+                        color: white;
+                        font-size: 15px;
+                        margin-top: 20px;
+                        padding: 10px 20px;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+            .seccionTresNosotros {
+                grid-area: seccionTresNosotros;
+                margin: auto;
+                padding: 50px;
+            }
+    }
+}
