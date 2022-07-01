@@ -4,12 +4,12 @@
   margin: 0;
   padding: 0; }
 
-#sneakers .sneakersGrilla .seccionUnoSneakers img, #sneakers .sneakersGrilla .seccionDosSneakers img {
+.seccionUnoSneakers img, .seccionDosSneakers img {
   max-width: 500px;
   border-radius: 20px;
   box-shadow: 5px 5px 20px gainsboro; }
 
-#sneakers .sneakersGrilla .seccionUnoSneakers, #sneakers .sneakersGrilla .seccionDosSneakers {
+.seccionUnoSneakers, .seccionDosSneakers {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -87,17 +87,12 @@
       max-width: 700px;
       text-shadow: 1px 1px #989898; }
 
-#sneakers .sneakersGrilla {
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+.grillaIndex {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
-  grid-template-areas: "navSneakers navSneakers navSneakers navSneakers" "seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers" "seccionDosSneakers seccionDosSneakers seccionDosSneakers seccionDosSneakers" "footerSneakers footerSneakers footerSneakers footerSneakers"; }
-  #sneakers .sneakersGrilla .seccionUnoSneakers h2, #sneakers .sneakersGrilla .seccionDosSneakers h2 {
-    font-family: "Roboto", sans-serif;
-    padding-top: 25px; }
-    #sneakers .sneakersGrilla .seccionUnoSneakers h2:hover, #sneakers .sneakersGrilla .seccionDosSneakers h2:hover {
-      transform: scale(1.1); }
+  gap: 0px 0px;
+  grid-template-areas: "header header header header" "seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers" "seccionDosSneakers seccionDosSneakers seccionDosSneakers seccionDosSneakers" "footer footer footer footer"; }
 
 .grillaTiendas {
   display: grid;
