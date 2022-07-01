@@ -84,10 +84,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
-  grid-template-areas: "navSneakers navSneakers navSneakers navSneakers"
- "seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers"
- "seccionDosSneakers seccionDosSneakers seccionDosSneakers seccionDosSneakers"
- "footerSneakers footerSneakers footerSneakers footerSneakers"; }
+  grid-template-areas: "navSneakers navSneakers navSneakers navSneakers" "seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers" "seccionDosSneakers seccionDosSneakers seccionDosSneakers seccionDosSneakers" "footerSneakers footerSneakers footerSneakers footerSneakers"; }
   #sneakers .sneakersGrilla .seccionUnoSneakers h2, #sneakers .sneakersGrilla .seccionDosSneakers h2 {
     font-family: "Roboto", sans-serif;
     padding-top: 25px; }
@@ -100,11 +97,7 @@
   grid-template-rows: 0, 5fr 1.5fr 1.5fr 0.5fr 0.5fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "header header header header"
- "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas"
- "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas"
- "asideTiendas asideTiendas asideTiendas asideTiendas"
- "footer footer footer footer"; }
+  grid-template-areas: "header header header header" "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas" "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas" "asideTiendas asideTiendas asideTiendas asideTiendas" "footer footer footer footer"; }
   .grillaTiendas section div {
     position: absolute;
     color: white;
@@ -151,12 +144,7 @@
   grid-template-rows: 0,5fr 0.5fr 1.5fr 1.5fr 1.5fr 0.5fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "header header header header"
- "encabezadoTitulo encabezadoTitulo encabezadoTitulo encabezadoTitulo"
- "seccionUnoNosotros seccionUnoNosotros seccionUnoNosotros seccionUnoNosotros"
- "seccionDosNosotros seccionDosNosotros seccionDosNosotros seccionDosNosotros"
- "seccionTresNosotros seccionTresNosotros seccionTresNosotros seccionTresNosotros"
- "footer footer footer footer"; }
+  grid-template-areas: "header header header header" "encabezadoTitulo encabezadoTitulo encabezadoTitulo encabezadoTitulo" "seccionUnoNosotros seccionUnoNosotros seccionUnoNosotros seccionUnoNosotros" "seccionDosNosotros seccionDosNosotros seccionDosNosotros seccionDosNosotros" "seccionTresNosotros seccionTresNosotros seccionTresNosotros seccionTresNosotros" "footer footer footer footer"; }
   #nosotros .grillaNosotros .encabezadoTitulo {
     grid-area: encabezadoTitulo;
     text-align: center;
