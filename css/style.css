@@ -63,7 +63,11 @@
   grid-template-rows: 0.5fr 1.5fr 1.5fr 1.5fr 0.5fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "header header header header" "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex" "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex" "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex" "footer footer footer footer"; }
+  grid-template-areas: "header header header header"
+ "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex"
+ "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex"
+ "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex"
+ "footer footer footer footer"; }
 
 #index .seccionUnoIndex {
   grid-area: seccionUnoIndex;
@@ -92,7 +96,10 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
   gap: 0px 0px;
-  grid-template-areas: "header header header header" "seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers" "seccionDosSneakers seccionDosSneakers seccionDosSneakers seccionDosSneakers" "footer footer footer footer"; }
+  grid-template-areas: "header header header header"
+ "seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers"
+ "seccionDosSneakers seccionDosSneakers seccionDosSneakers seccionDosSneakers"
+ "footer footer footer footer"; }
 
 .grillaTiendas {
   display: grid;
@@ -100,7 +107,11 @@
   grid-template-rows: 0, 5fr 1.5fr 1.5fr 0.5fr 0.5fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "header header header header" "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas" "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas" "asideTiendas asideTiendas asideTiendas asideTiendas" "footer footer footer footer"; }
+  grid-template-areas: "header header header header"
+ "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas"
+ "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas"
+ "asideTiendas asideTiendas asideTiendas asideTiendas"
+ "footer footer footer footer"; }
   .grillaTiendas section div {
     position: absolute;
     color: white;
@@ -147,7 +158,12 @@
   grid-template-rows: 0,5fr 0.5fr 1.5fr 1.5fr 1.5fr 0.5fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "header header header header" "encabezadoTitulo encabezadoTitulo encabezadoTitulo encabezadoTitulo" "seccionUnoNosotros seccionUnoNosotros seccionUnoNosotros seccionUnoNosotros" "seccionDosNosotros seccionDosNosotros seccionDosNosotros seccionDosNosotros" "seccionTresNosotros seccionTresNosotros seccionTresNosotros seccionTresNosotros" "footer footer footer footer"; }
+  grid-template-areas: "header header header header"
+ "encabezadoTitulo encabezadoTitulo encabezadoTitulo encabezadoTitulo"
+ "seccionUnoNosotros seccionUnoNosotros seccionUnoNosotros seccionUnoNosotros"
+ "seccionDosNosotros seccionDosNosotros seccionDosNosotros seccionDosNosotros"
+ "seccionTresNosotros seccionTresNosotros seccionTresNosotros seccionTresNosotros"
+ "footer footer footer footer"; }
   #nosotros .grillaNosotros .encabezadoTitulo {
     grid-area: encabezadoTitulo;
     text-align: center;
