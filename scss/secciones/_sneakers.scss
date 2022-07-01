@@ -1,4 +1,15 @@
 #sneakers{
+    .grillaIndex {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "header header header header"
+          "seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers"
+          "seccionDosSneakers seccionDosSneakers seccionDosSneakers seccionDosSneakers"
+          "footer footer footer footer"; 
+      }
     .seccionUnoSneakers{
         @extend %contenedoresCards;
     }
