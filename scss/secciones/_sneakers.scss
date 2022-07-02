@@ -14,11 +14,17 @@
         img{
             @extend %styleCards;
         }
+        h2{
+            font-family: $typoTitle
+        }
     }
     .seccionDosSneakers{
         @extend %contenedoresCards;
         img{
             @extend %styleCards;
+        }
+        h2{
+            font-family: $typoTitle
         }
     }
     

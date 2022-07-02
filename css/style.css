@@ -69,8 +69,7 @@
   grid-area: seccionUnoIndex;
   display: flex; }
   #index .seccionUnoIndex img {
-    max-width: 100%;
-    display: block; }
+    max-width: 100%; }
   #index .seccionUnoIndex div {
     position: absolute;
     margin-top: 250px;
@@ -93,6 +92,12 @@
   grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
   gap: 0px 0px;
   grid-template-areas: "header header header header" "seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers" "seccionDosSneakers seccionDosSneakers seccionDosSneakers seccionDosSneakers" "footer footer footer footer"; }
+
+.seccionUnoSneakers h2 {
+  font-family: "Roboto", sans-serif; }
+
+.seccionDosSneakers h2 {
+  font-family: "Roboto", sans-serif; }
 
 .grillaTiendas {
   display: grid;
@@ -198,3 +203,37 @@
     grid-area: seccionTresNosotros;
     margin: auto;
     padding: 50px; }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; }
+    .header ul {
+      margin: auto; }
+  .seccionUnoSneakers, .seccionDosSneakers {
+    flex-direction: column;
+    padding: 0px 50px; }
+    .seccionUnoSneakers img, .seccionDosSneakers img {
+      margin: 25px; }
+    .seccionUnoSneakers h2, .seccionDosSneakers h2 {
+      padding: 15px 0px; }
+  .grillaTiendas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0, 5fr 1.5fr 1.5fr 0.5fr 0.5fr;
+    grid-template-areas: "header header header header" "seccionUnoTiendas seccionUnoTiendas seccionUnoTiendas seccionUnoTiendas" "seccionDosTiendas seccionDosTiendas seccionDosTiendas seccionDosTiendas" "asideTiendas asideTiendas asideTiendas asideTiendas" "footer footer footer footer"; }
+  .encabezadoTitulo {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); }
+  .seccionUnoNosotros {
+    flex-direction: column-reverse;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 100vh; }
+  .seccionDosNosotros {
+    flex-direction: column;
+    text-align: center;
+    height: 100vh; }
+  .seccionTresNosotros iframe {
+    max-width: 100%; }
+  .footer {
+    flex-direction: column; } }

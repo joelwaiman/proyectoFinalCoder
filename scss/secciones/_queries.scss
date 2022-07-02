@@ -1,0 +1,63 @@
+@media(max-width:768px){
+    // HEADER MEDIA QUERIES
+    .header{
+        flex-direction: column;
+        ul{
+            margin: auto;
+        }
+    }
+
+    // SNEAKERS MEDIA QUERIES
+
+    .seccionUnoSneakers, .seccionDosSneakers{
+        flex-direction: column;
+        padding: 0px 50px;
+        img{
+            margin: 25px;
+        }
+        h2{
+            padding: 15px 0px;
+        }
+    }
+
+    //  TIENDAS MEDIA QUERIES
+
+    .grillaTiendas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0, 5fr 1.5fr 1.5fr 0.5fr 0.5fr;
+        grid-template-areas:
+            "header header header header"
+            "seccionUnoTiendas seccionUnoTiendas seccionUnoTiendas seccionUnoTiendas"
+            "seccionDosTiendas seccionDosTiendas seccionDosTiendas seccionDosTiendas"
+            "asideTiendas asideTiendas asideTiendas asideTiendas"
+            "footer footer footer footer";
+        }
+
+        // NOSOTROS MEDIA QUERIES
+        
+    .encabezadoTitulo{
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    }
+
+    .seccionUnoNosotros{
+        flex-direction: column-reverse;
+        background-color: black;
+        color: white;
+        text-align: center;
+        height: 100vh;
+    }
+    .seccionDosNosotros{
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+    }
+    .seccionTresNosotros iframe{
+        max-width: 100%
+    }
+
+    // FOOTER MEDIA QUERIES
+    .footer{
+        flex-direction: column;
+    }
+}
