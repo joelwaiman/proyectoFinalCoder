@@ -60,10 +60,10 @@
 #index .grillaIndex {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-rows: 0.5fr 4.5fr 0.5fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "header header header header" "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex" "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex" "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex" "footer footer footer footer"; }
+  grid-template-areas: "header header header header" "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex" "footer footer footer footer"; }
 
 #index .seccionUnoIndex {
   grid-area: seccionUnoIndex;
@@ -142,7 +142,8 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  text-align: center; }
   .asideTiendas h2 {
     padding: 50px; }
 
@@ -204,23 +205,28 @@
     margin: auto;
     padding: 50px; }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .header {
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
     .header ul {
-      margin: auto; }
+      margin-left: auto; }
+      .header ul a {
+        font-size: 15px; }
   .seccionUnoSneakers, .seccionDosSneakers {
     flex-direction: column;
-    padding: 0px 50px; }
+    padding: 0px 50px;
+    align-items: center; }
     .seccionUnoSneakers img, .seccionDosSneakers img {
-      margin: 25px; }
+      margin: 25px;
+      max-width: 90%; }
     .seccionUnoSneakers h2, .seccionDosSneakers h2 {
       padding: 15px 0px; }
   .grillaTiendas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0, 5fr 1.5fr 1.5fr 0.5fr 0.5fr;
-    grid-template-areas: "header header header header" "seccionUnoTiendas seccionUnoTiendas seccionUnoTiendas seccionUnoTiendas" "seccionDosTiendas seccionDosTiendas seccionDosTiendas seccionDosTiendas" "asideTiendas asideTiendas asideTiendas asideTiendas" "footer footer footer footer"; }
+    grid-template-areas: "header header header header" "seccionUnoTiendas seccionUnoTiendas seccionUnoTiendas seccionUnoTiendas" "seccionUnoTiendas seccionUnoTiendas seccionUnoTiendas seccionUnoTiendas" "seccionDosTiendas seccionDosTiendas seccionDosTiendas seccionDosTiendas" "seccionDosTiendas seccionDosTiendas seccionDosTiendas seccionDosTiendas" "asideTiendas asideTiendas asideTiendas asideTiendas" "footer footer footer footer"; }
   .encabezadoTitulo {
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); }
   .seccionUnoNosotros {
@@ -229,10 +235,18 @@
     color: white;
     text-align: center;
     height: 100vh; }
+    .seccionUnoNosotros img {
+      width: 375px; }
+    .seccionUnoNosotros p {
+      max-width: 370px; }
   .seccionDosNosotros {
     flex-direction: column;
     text-align: center;
     height: 100vh; }
+    .seccionDosNosotros img {
+      width: 375px; }
+    .seccionDosNosotros p {
+      max-width: 370px; }
   .seccionTresNosotros iframe {
     max-width: 100%; }
   .footer {
