@@ -19,7 +19,7 @@
         align-items: center;
         img{
             margin: 25px;
-            max-width: 90%;
+            width: 90%;
         }
         h2{
             padding: 15px 0px;
@@ -55,7 +55,7 @@
         text-align: center;
         height: 100vh;
         img{
-            width: 375px;
+            width: 100%;
         }
         p{
             max-width: 370px;
@@ -67,14 +67,14 @@
         text-align: center;
         height: 100vh;
         img{
-            width: 375px;
+            width: 100%;
         }
         p{
             max-width: 370px;
         }
     }
     .seccionTresNosotros iframe{
-        max-width: 100%
+        width: 100%
     }
 
     // FOOTER MEDIA QUERIES

@@ -23,8 +23,6 @@
   justify-content: space-between;
   align-items: center;
   background-image: linear-gradient(to left, #434343 0%, black 100%); }
-  .header__img {
-    margin-left: 50px; }
   .header__ul {
     display: flex;
     margin-right: 50px; }
@@ -116,8 +114,7 @@
     .grillaTiendas section div h1 {
       padding-bottom: 25px; }
   .grillaTiendas section img {
-    max-width: 100%;
-    display: block; }
+    max-width: 100%; }
 
 .seccionUnoTiendas {
   grid-area: seccionUnoTiendas;
@@ -219,7 +216,7 @@
     align-items: center; }
     .seccionUnoSneakers img, .seccionDosSneakers img {
       margin: 25px;
-      max-width: 90%; }
+      width: 90%; }
     .seccionUnoSneakers h2, .seccionDosSneakers h2 {
       padding: 15px 0px; }
   .grillaTiendas {
@@ -236,7 +233,7 @@
     text-align: center;
     height: 100vh; }
     .seccionUnoNosotros img {
-      width: 375px; }
+      width: 100%; }
     .seccionUnoNosotros p {
       max-width: 370px; }
   .seccionDosNosotros {
@@ -244,10 +241,10 @@
     text-align: center;
     height: 100vh; }
     .seccionDosNosotros img {
-      width: 375px; }
+      width: 100%; }
     .seccionDosNosotros p {
       max-width: 370px; }
   .seccionTresNosotros iframe {
-    max-width: 100%; }
+    width: 100%; }
   .footer {
     flex-direction: column; } }
