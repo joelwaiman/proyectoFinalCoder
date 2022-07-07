@@ -13,8 +13,11 @@
     .seccionUnoIndex {
         grid-area: seccionUnoIndex;
         display: flex;
-        img{
+        .imgFondoDesktop{
             max-width: 100%;
+        }
+        .imgFondoMobile{
+            display: none;
         }
         div{
             position: absolute;

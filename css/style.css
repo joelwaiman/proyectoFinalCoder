@@ -66,8 +66,10 @@
 #index .seccionUnoIndex {
   grid-area: seccionUnoIndex;
   display: flex; }
-  #index .seccionUnoIndex img {
+  #index .seccionUnoIndex .imgFondoDesktop {
     max-width: 100%; }
+  #index .seccionUnoIndex .imgFondoMobile {
+    display: none; }
   #index .seccionUnoIndex div {
     position: absolute;
     margin-top: 250px;
@@ -210,6 +212,11 @@
       margin-left: auto; }
       .header ul a {
         font-size: 15px; }
+  #index .seccionUnoIndex .imgFondoMobile {
+    display: block;
+    max-width: 100%; }
+  #index .seccionUnoIndex .imgFondoDesktop {
+    display: none; }
   .seccionUnoSneakers, .seccionDosSneakers {
     flex-direction: column;
     padding: 0px 50px;

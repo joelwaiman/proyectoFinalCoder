@@ -10,7 +10,19 @@
             }
         }
     }
-
+    // INDEX MEDIA QUERIES
+    #index{
+        .seccionUnoIndex{
+            .imgFondoMobile{
+                display: block;
+                max-width: 100%;
+            }
+            .imgFondoDesktop{
+                display: none;
+            }
+            
+        }
+    }
     // SNEAKERS MEDIA QUERIES
 
     .seccionUnoSneakers, .seccionDosSneakers{
