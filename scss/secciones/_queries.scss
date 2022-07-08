@@ -1,15 +1,4 @@
 @media(max-width:576px){
-    // HEADER MEDIA QUERIES
-    .header{
-        flex-direction: column;
-        align-items: center;
-        ul{
-            margin-left: auto;
-            a{
-                font-size: 15px;
-            }
-        }
-    }
     // INDEX MEDIA QUERIES
     #index{
         .seccionUnoIndex{
